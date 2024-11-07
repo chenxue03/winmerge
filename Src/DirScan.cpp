@@ -1070,3 +1070,20 @@ static unsigned GetDirCompareFlags3Way(const DIFFITEM& di)
 
 	return code;
 }
+
+/**
+这是一个冒泡排序算法的C++实现
+*/
+void BubbleSort(int arr[], int n)
+{
+	for (int i = 0; i < n - 1; i++)
+	{
+		for (int j = 0; j < n - i - 1; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				//交换arr[j]和arr[j+1]
+			}
+		}
+	}
+}
