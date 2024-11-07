@@ -1,0 +1,70 @@
+/*
+Frhed - Free hex editor
+Copyright (C) 2000 Raihan Kibria
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License, version 2, as published by
+the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; see the file COPYING.  If not, write to the Free
+Software Foundation, 59 Temple Place - Suite 330, Boston, MA
+02111-1307, USA.
+
+Last change: 2013-02-24 by Jochen Neubeck
+*/
+/** 
+ * @file  Template.h
+ *
+ * @brief Declaration file for Template class.
+ *
+ */
+#ifndef _TEMPLATE_H_
+#define _TEMPLATE_H_
+
+#include "Simparr.h"
+#include "hexwnd.h"  // For HexEditorWindow::BYTE_ENDIAN
+
+/** @brief Maximum length of the type in template. */
+const int TPL_TYPE_MAXLEN = 16;
+/** @brief Maximum length of the variable name in template. */
+const int TPL_NAME_MAXLEN = 128;
+
+/**
+ * @brief A class for applying template for the binary data.
+ */
+class Template
+{
+public:
+	Template(BYTE const *data, size_t size);
+	~Template();
+
+	void SetOriginalFilename(LPCTSTR filename);
+	bool OpenTemplate(LPCTSTR filename);
+	bool LoadTemplateData();
+	void CreateTemplateArray(size_t curByte);
+	void ApplyTemplate(HexEditorWindow::BYTE_ENDIAN binaryMode, size_t curByte);
+	LPCTSTR GetResult();
+
+protected:
+	bool ignore_non_code(char *pcTpl, size_t tpl_len, size_t &index);
+	bool read_tpl_token(char *pcTpl, size_t tpl_len, size_t &index, TCHAR *name);
+
+private:
+	int m_filehandle; /**< File handle to template file. */
+	TCHAR m_origFilename[MAX_PATH]; /**< Filename of the file in the editor. */
+	TCHAR m_filename[MAX_PATH]; /**< Template file name. */
+	size_t m_filelen; /**< Template file size. */
+	char *m_tmplBuf; /**< Template file data buffer (read from file). */
+	TString m_resultString; /**< Resulting string for applied template. */
+	//const SimpleArray<BYTE, 100> &m_dataArray; /**< Original data. */
+	BYTE const *const m_data;
+	size_t const m_size;
+};
+
+#endif // _TEMPLATE_H_

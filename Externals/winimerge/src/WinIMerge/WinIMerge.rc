@@ -1,0 +1,357 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_WINIMERGE           ICON                    "WinIMerge.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_WINIMERGE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "New (3 panes)",               ID_FILE_NEW3
+        MENUITEM "&Open Images...\tCtrl+O",     ID_FILE_OPEN
+        MENUITEM "Open &3 Images...\tCtrl+3",   ID_FILE_OPEN3
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        POPUP "Save &As"
+        BEGIN
+            MENUITEM "Save &Left As...",            ID_FILE_SAVE_LEFT_AS
+            MENUITEM "Save &Middle As...",          ID_FILE_SAVE_MIDDLE_AS
+            MENUITEM "Save &Right As...",           ID_FILE_SAVE_RIGHT_AS
+        END
+        MENUITEM "&Generate Report...",         ID_FILE_GENERATE_REPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Re&load\tCtrl+F5",            ID_FILE_RELOAD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tAlt+F4",               ID_FILE_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "&Cut\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "View &Differences",           ID_VIEW_VIEWDIFFERENCES
+        MENUITEM "&Blink Differences",          ID_VIEW_BLINKDIFFERENCES
+        POPUP "Diff &Block Size"
+        BEGIN
+            MENUITEM "&1",                          ID_VIEW_DIFFBLOCKSIZE_1
+            MENUITEM "&2",                          ID_VIEW_DIFFBLOCKSIZE_2
+            MENUITEM "&4",                          ID_VIEW_DIFFBLOCKSIZE_4
+            MENUITEM "&8",                          ID_VIEW_DIFFBLOCKSIZE_8
+            MENUITEM "1&6",                         ID_VIEW_DIFFBLOCKSIZE_16
+            MENUITEM "&32",                         ID_VIEW_DIFFBLOCKSIZE_32
+        END
+        POPUP "&Ignore Color Difference (Color Distance Threshold)"
+        BEGIN
+            MENUITEM "&0",                          ID_VIEW_THRESHOLD_0
+            MENUITEM "&2",                          ID_VIEW_THRESHOLD_2
+            MENUITEM "&4",                          ID_VIEW_THRESHOLD_4
+            MENUITEM "&8",                          ID_VIEW_THRESHOLD_8
+            MENUITEM "1&6",                         ID_VIEW_THRESHOLD_16
+            MENUITEM "&32",                         ID_VIEW_THRESHOLD_32
+            MENUITEM "64",                          ID_VIEW_THRESHOLD_64
+        END
+        POPUP "Ins&ertion/Deletion Detection"
+        BEGIN
+            MENUITEM "&None",                       ID_VIEW_INSERTIONDELETIONDETECTION_NONE
+            MENUITEM "&Vertical",                   ID_VIEW_INSERTIONDELETIONDETECTION_VERTICAL
+            MENUITEM "&Horizontal",                 ID_VIEW_INSERTIONDELETIONDETECTION_HORIZONTAL
+            POPUP "Diff Algorithm"
+            BEGIN
+                MENUITEM "&Myers",                      ID_VIEW_DIFF_ALGORITHM_MYERS
+                MENUITEM "&Minimal",                    ID_VIEW_DIFF_ALGORITHM_MINIMAL
+                MENUITEM "&Patience",                   ID_VIEW_DIFF_ALGORITHM_PATIENCE
+                MENUITEM "&Histogram",                  ID_VIEW_DIFF_ALGORITHM_HISTOGRAM
+                MENUITEM "&None",                       ID_VIEW_DIFF_ALGORITHM_NONE
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Prev Page",                  ID_VIEW_PAGE_PREVPAGE
+        MENUITEM "&Next Page",                  ID_VIEW_PAGE_NEXTPAGE
+        POPUP "&Active Pane"
+        BEGIN
+            MENUITEM "Rotate &Right 90deg",         ID_POPUP_CURPANE_ROTATE_RIGHT_90
+            MENUITEM "Rotate &Left 90deg",          ID_POPUP_CURPANE_ROTATE_LEFT_90
+            MENUITEM "Flip V&ertically",            ID_POPUP_CURPANE_FLIP_VERTICALLY
+            MENUITEM "Flip H&orizontally",          ID_POPUP_CURPANE_FLIP_HORIZONTALLY
+            MENUITEM "&Previous Page",              ID_POPUP_CURPANE_PREVIOUSPAGE
+            MENUITEM "&Next Page",                  ID_POPUP_CURPANE_NEXTPAGE
+        END
+        MENUITEM SEPARATOR
+        POPUP "&Zoom"
+        BEGIN
+            MENUITEM "&400%",                       ID_VIEW_ZOOM_400
+            MENUITEM "&200%",                       ID_VIEW_ZOOM_200
+            MENUITEM "&100%",                       ID_VIEW_ZOOM_100
+            MENUITEM "&50%",                        ID_VIEW_ZOOM_50
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom &In\tCtrl++",            ID_VIEW_ZOOMIN
+            MENUITEM "Zoom &Out\tCtrl+-",           ID_VIEW_ZOOMOUT
+        END
+        POPUP "&Overlay Mode"
+        BEGIN
+            MENUITEM "&None",                       ID_VIEW_OVERLAY_NONE
+            MENUITEM "&XOR",                        ID_VIEW_OVERLAY_XOR
+            MENUITEM "&Alpha Blend",                ID_VIEW_OVERLAY_ALPHABLEND
+            MENUITEM "Alpha &Blend Animation",      ID_VIEW_OVERLAY_ALPHABLEND_ANIM
+        END
+        POPUP "Dra&gging Mode"
+        BEGIN
+            MENUITEM "&None",                       ID_VIEW_DRAGGINGMODE_NONE
+            MENUITEM "&Move",                       ID_VIEW_DRAGGINGMODE_MOVE
+            MENUITEM "&Adjust Offset",              ID_VIEW_DRAGGINGMODE_ADJUST_OFFSET
+            MENUITEM "&Vertical Wipe",              ID_VIEW_DRAGGINGMODE_VERTICAL_WIPE
+            MENUITEM "&Horizontal Wipe",            ID_VIEW_DRAGGINGMODE_HORIZONTAL_WIPE
+            MENUITEM "Rectangle &Select",           ID_VIEW_DRAGGINGMODE_RECTANGLE_SELECT
+        END
+        MENUITEM "Split &Horizontally",         ID_VIEW_SPLITHORIZONTALLY
+        MENUITEM "&Set Background Color",       ID_VIEW_USEBACKCOLOR
+        POPUP "&Vector Image Scaling"
+        BEGIN
+            MENUITEM "&400%",                       ID_VIEW_VECTORIMAGESCALING_400
+            MENUITEM "&200%",                       ID_VIEW_VECTORIMAGESCALING_200
+            MENUITEM "&100%",                       ID_VIEW_VECTORIMAGESCALING_100
+            MENUITEM "50%",                         ID_VIEW_VECTORIMAGESCALING_50
+            MENUITEM "25%",                         ID_VIEW_VECTORIMAGESCALING_25
+        END
+        POPUP "&Animation Settings"
+        BEGIN
+            POPUP "&Blink interval"
+            BEGIN
+                MENUITEM "200[ms]",                   ID_VIEW_BLINKINTERVAL_200
+                MENUITEM "400[ms]",                   ID_VIEW_BLINKINTERVAL_400
+                MENUITEM "600[ms]",                   ID_VIEW_BLINKINTERVAL_600
+                MENUITEM "800[ms]",                   ID_VIEW_BLINKINTERVAL_800
+                MENUITEM "1000[ms]",                  ID_VIEW_BLINKINTERVAL_1000
+                MENUITEM "1200[ms]",                  ID_VIEW_BLINKINTERVAL_1200
+                MENUITEM "1500[ms]",                  ID_VIEW_BLINKINTERVAL_1500
+                MENUITEM "2000[ms]",                  ID_VIEW_BLINKINTERVAL_2000
+                MENUITEM "3000[ms]",                  ID_VIEW_BLINKINTERVAL_3000
+                MENUITEM "4000[ms]",                  ID_VIEW_BLINKINTERVAL_4000
+            END
+            POPUP "&Overlay animation interval"
+            BEGIN
+                MENUITEM "200[ms]",                   ID_VIEW_OVERLAYANIMINTERVAL_200
+                MENUITEM "400[ms]",                   ID_VIEW_OVERLAYANIMINTERVAL_400
+                MENUITEM "600[ms]",                   ID_VIEW_OVERLAYANIMINTERVAL_600
+                MENUITEM "800[ms]",                   ID_VIEW_OVERLAYANIMINTERVAL_800
+                MENUITEM "1000[ms]",                  ID_VIEW_OVERLAYANIMINTERVAL_1000
+                MENUITEM "1200[ms]",                  ID_VIEW_OVERLAYANIMINTERVAL_1200
+                MENUITEM "1500[ms]",                  ID_VIEW_OVERLAYANIMINTERVAL_1500
+                MENUITEM "2000[ms]",                  ID_VIEW_OVERLAYANIMINTERVAL_2000
+                MENUITEM "3000[ms]",                  ID_VIEW_OVERLAYANIMINTERVAL_3000
+                MENUITEM "4000[ms]",                  ID_VIEW_OVERLAYANIMINTERVAL_4000
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Extract &Text",               ID_VIEW_EXTRACTTEXT
+        MENUITEM "Show &Metadata",              ID_VIEW_SHOWMETADATA
+    END
+    POPUP "&Merge"
+    BEGIN
+        MENUITEM "&Next Difference\tAlt+Down",  ID_MERGE_NEXTDIFFERENCE
+        MENUITEM "&Previous Difference\tAlt+Up", ID_MERGE_PREVIOUSDIFFERENCE
+        MENUITEM SEPARATOR
+        MENUITEM "&First Difference\tAlt+Home", ID_MERGE_FIRSTDIFFERENCE
+        MENUITEM "&Last Difference\tAlt+End",   ID_MERGE_LASTDIFFERENCE
+        MENUITEM SEPARATOR
+        MENUITEM "Next Conflict\tAlt+Shift+Down", ID_MERGE_NEXTCONFLICT
+        MENUITEM "Previous Conflict\tAlt+Shift+Up", ID_MERGE_PREVIOUSCONFLICT
+        MENUITEM SEPARATOR
+        MENUITEM "Copy to &Right\tAlt+Right",   ID_MERGE_COPYTORIGHT
+        MENUITEM "Copy to L&eft\tAlt+Left",     ID_MERGE_COPYTOLEFT
+        MENUITEM SEPARATOR
+        MENUITEM "Copy from Left\tAlt+Shift+Right", ID_MERGE_COPYFROMLEFT
+        MENUITEM "Copy from Right\tAlt+Shift+Left", ID_MERGE_COPYFROMRIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Copy &All to Right",          ID_MERGE_COPYALLTORIGHT
+        MENUITEM "Cop&y All to Left",           ID_MERGE_COPYALLTOLEFT
+        MENUITEM SEPARATOR
+        MENUITEM "Auto Merge\tAlt+Ctrl+M",      ID_MERGE_AUTOMERGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+IDR_POPUPMENU MENU
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "Current Pane: Rotate &Right 90deg", ID_POPUP_CURPANE_ROTATE_RIGHT_90
+        MENUITEM "Current Pane: Rotate &Left 90deg", ID_POPUP_CURPANE_ROTATE_LEFT_90
+        MENUITEM "Current Pane: Flip V&ertically", ID_POPUP_CURPANE_FLIP_VERTICALLY
+        MENUITEM "Current Pane: Flip H&orizontally", ID_POPUP_CURPANE_FLIP_HORIZONTALLY
+        MENUITEM "Current Pane: &Previous Page", ID_POPUP_CURPANE_PREVIOUSPAGE
+        MENUITEM "Current Pane: &Next Page",    ID_POPUP_CURPANE_NEXTPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&None",                       ID_VIEW_DRAGGINGMODE_NONE
+        MENUITEM "&Move",                       ID_VIEW_DRAGGINGMODE_MOVE
+        MENUITEM "&Adjust Offset",              ID_VIEW_DRAGGINGMODE_ADJUST_OFFSET
+        MENUITEM "&Vertical Wipe",              ID_VIEW_DRAGGINGMODE_VERTICAL_WIPE
+        MENUITEM "&Horizontal Wipe",            ID_VIEW_DRAGGINGMODE_HORIZONTAL_WIPE
+        MENUITEM "Rectangle &Select",           ID_VIEW_DRAGGINGMODE_RECTANGLE_SELECT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_WINIMERGE ACCELERATORS
+BEGIN
+    "0",            ID_VIEW_ZOOM_100,       VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_MERGE_AUTOMERGE,     VIRTKEY, CONTROL, ALT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_F5,          ID_FILE_RELOAD,         VIRTKEY, CONTROL, NOINVERT
+    VK_LEFT,        ID_MERGE_COPYFROMRIGHT, VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_LEFT,        ID_MERGE_COPYTOLEFT,    VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       ID_MERGE_COPYFROMLEFT,  VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_RIGHT,       ID_MERGE_COPYTORIGHT,   VIRTKEY, ALT, NOINVERT
+    VK_UP,          ID_MERGE_PREVIOUSCONFLICT, VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_UP,          ID_MERGE_PREVIOUSDIFFERENCE, VIRTKEY, ALT, NOINVERT
+    VK_DOWN,        ID_MERGE_NEXTCONFLICT,  VIRTKEY, SHIFT, ALT, NOINVERT
+    VK_DOWN,        ID_MERGE_NEXTDIFFERENCE, VIRTKEY, ALT, NOINVERT
+    VK_HOME,        ID_MERGE_FIRSTDIFFERENCE, VIRTKEY, ALT, NOINVERT
+    VK_END,         ID_MERGE_LASTDIFFERENCE, VIRTKEY, ALT, NOINVERT
+    VK_MULTIPLY,    ID_VIEW_ZOOM_100,       VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_VIEW_ZOOMIN,         VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_PLUS,    ID_VIEW_ZOOMIN,         VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    ID_VIEW_ZOOMOUT,        VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_MINUS,   ID_VIEW_ZOOMOUT,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#include "../Version.h"
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION FILEVER
+ PRODUCTVERSION PRODUCTVER
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "https://github.com/winmerge/winimerge"
+            VALUE "FileDescription", "WinIMerge"
+            VALUE "FileVersion", STRFILEVER
+            VALUE "InternalName", "WinIMerge.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2014-2021 sdottaka@users.sourceforge.net"
+            VALUE "OriginalFilename", "WinIMerge.exe"
+            VALUE "ProductName", "WinIMerge"
+            VALUE "ProductVersion", STRPRODUCTVER
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

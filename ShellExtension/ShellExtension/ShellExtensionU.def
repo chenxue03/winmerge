@@ -1,0 +1,9 @@
+; ShellExtensionU.def : Declares the module parameters.
+
+LIBRARY      "ShellExtensionU.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

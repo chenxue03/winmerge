@@ -1,0 +1,201 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese (Japan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Japanese (Japan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 85, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Diff",IDC_DIFF_GROUP,2,0,80,120
+    CONTROL         "Highlight",IDC_DIFF_HIGHLIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,9,70,9
+    CONTROL         "Blink",IDC_DIFF_BLINK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,19,70,9
+    LTEXT           "Block Size",IDC_DIFF_BLOCKSIZE,5,29,70,8
+    CONTROL         "",IDC_DIFF_BLOCKSIZE_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,6,37,70,13
+    RTEXT           "",IDC_DIFF_BLOCKSIZE_STATIC,50,27,18,8
+    LTEXT           "Block Alpha",IDC_DIFF_BLOCKALPHA,5,51,70,8
+    CONTROL         "",IDC_DIFF_BLOCKALPHA_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,6,59,70,13
+    RTEXT           "",IDC_DIFF_BLOCKALPHA_STATIC,50,51,18,8
+    LTEXT           "CD Threshold",IDC_DIFF_CDTHRESHOLD,5,73,70,8
+    RTEXT           "",IDC_DIFF_CDTHRESHOLD_STATIC,50,73,18,8
+    CONTROL         "",IDC_DIFF_CDTHRESHOLD_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,6,81,70,13
+    LTEXT           "Ins/Del Detection",IDC_DIFF_INSERTION_DELETION_DETECTION,5,94,70,8
+    COMBOBOX        IDC_DIFF_INSERTION_DELETION_DETECTION_MODE,5,103,70,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Overlay",IDC_OVERLAY_GROUP,2,120,80,50
+    COMBOBOX        IDC_OVERLAY_MODE,5,130,70,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Alpha",IDC_OVERLAY_ALPHA,5,145,70,8
+    CONTROL         "",IDC_OVERLAY_ALPHA_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,6,153,70,13
+    RTEXT           "",IDC_OVERLAY_ALPHA_STATIC,50,145,18,8
+    GROUPBOX        "",IDC_VIEW_GROUP,2,170,80,52
+    LTEXT           "Zoom",IDC_ZOOM,5,177,70,8
+    CONTROL         "",IDC_ZOOM_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,6,184,69,13
+    RTEXT           "",IDC_ZOOM_STATIC,42,177,26,8
+    LTEXT           "Page:",IDC_PAGE,5,202,70,8
+    EDITTEXT        IDC_PAGE_EDIT,46,202,33,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PAGE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,67,202,12,15
+    CONTROL         "",IDC_DIFFMAP,"Static",SS_OWNERDRAW | SS_NOTIFY,2,223,80,45
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 78
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#include "../Version.h"
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION FILEVER
+ PRODUCTVERSION PRODUCTVER
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "https://github.com/winmerge/winimerge"
+            VALUE "FileDescription", "WInIMergeLib"
+            VALUE "FileVersion", STRFILEVER
+            VALUE "InternalName", "WinIMergeLib.dll"
+            VALUE "LegalCopyright", "Copyright (C) 2014-2021 sdottaka@users.sourceforge.net"
+            VALUE "OriginalFilename", "WinIMergeLib.dll"
+            VALUE "ProductName", "WinIMergeLib"
+            VALUE "ProductVersion", STRPRODUCTVER
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_DIFF_GROUP          "Diff"
+    IDS_DIFF_HIGHLIGHT      "Highlight"
+    IDS_DIFF_BLINK          "Blink"
+    IDS_DIFF_BLOCKSIZE      "Block Size"
+    IDS_DIFF_BLOCKALPHA     "Block Alpha"
+    IDS_DIFF_CDTHRESHOLD    "CD Threshold"
+    IDS_DIFF_INSERTION_DELETION_DETECTION "Ins/Del Detection"
+    IDS_DIFF_INSERTION_DELETION_DETECTION_NONE "None"
+    IDS_DIFF_INSERTION_DELETION_DETECTION_VERTICAL "Vertical"
+    IDS_DIFF_INSERTION_DELETION_DETECTION_HORIZONTAL "Horizontal"
+    IDS_OVERLAY_GROUP       "Overlay"
+    IDS_OVERLAY_ALPHA       "Alpha"
+    IDS_OVERLAY_MODE_NONE   "None"
+    IDS_OVERLAY_MODE_XOR    "XOR"
+    IDS_OVERLAY_MODE_ALPHA  "Alpha Blend"
+    IDS_OVERLAY_MODE_ALPHA_ANIMATION "Alpha Animation"
+    IDS_ZOOM                "Zoom"
+    IDS_PAGE                "Page:"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

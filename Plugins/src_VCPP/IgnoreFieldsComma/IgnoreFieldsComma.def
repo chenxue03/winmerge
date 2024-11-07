@@ -1,0 +1,9 @@
+; IgnoreFieldsComma.def : Declares the module parameters.
+
+LIBRARY      "IgnoreFieldsComma.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

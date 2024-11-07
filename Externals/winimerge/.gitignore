@@ -1,0 +1,15 @@
+.vs/*
+*.VC.VC.opendb
+*.VC.db
+
+BuildTmp/*
+Build/*
+Dist/
+
+*.user
+*.swp
+*.bak
+*.aps
+*.*~
+winimerge-cppcheck-build-dir/
+gen-versioninfo.h

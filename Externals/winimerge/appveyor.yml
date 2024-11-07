@@ -1,0 +1,19 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+clone_folder: c:\projects\winimerge\winimerge
+shallow_clone: true
+install:
+- cmd: >-
+    cd c:\projects\winimerge\
+
+    git clone https://github.com/winmerge/freeimage
+
+build_script:
+- cmd: >-
+    cd c:\projects\winimerge\winimerge
+
+    BuildBin.vs2017.cmd
+
+    BuildArc.cmd
+artifacts:
+- path: Dist/winimerge-*-exe.zip

@@ -1,0 +1,9 @@
+; HideFirstLetter.def : Declares the module parameters.
+
+LIBRARY      "HideFirstLetter.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

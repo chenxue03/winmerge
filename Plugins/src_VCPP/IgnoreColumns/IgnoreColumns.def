@@ -1,0 +1,9 @@
+; IgnoreColumns.def : Declares the module parameters.
+
+LIBRARY      "IgnoreColumns.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

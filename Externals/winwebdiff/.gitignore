@@ -1,0 +1,11 @@
+.vs/
+Build/
+BuildTmp/
+packages/
+Dist/
+*.user
+*.bak
+*.aps
+*.*~
+winwebdiff-cppcheck-build-dir/
+src/gen-versioninfo.h

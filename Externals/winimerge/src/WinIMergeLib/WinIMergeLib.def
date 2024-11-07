@@ -1,0 +1,6 @@
+EXPORTS
+	WinIMerge_CreateWindow
+	WinIMerge_DestroyWindow
+	WinIMerge_CreateToolWindow
+	WinIMerge_DestroyToolWindow
+	WinIMerge_CreateWindowless

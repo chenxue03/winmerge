@@ -1,0 +1,10 @@
+syntax: glob
+BuildTmp
+Dist
+ipch
+.vs/
+*.exp
+*.tlog
+*.opensdf
+*.sdf
+*.un~

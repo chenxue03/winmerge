@@ -1,0 +1,9 @@
+; WatchEndOfLog.def : Declares the module parameters.
+
+LIBRARY      "WatchEndOfLog.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer	PRIVATE

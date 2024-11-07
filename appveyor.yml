@@ -1,0 +1,13 @@
+version: 1.0.{build}
+image: Visual Studio 2022
+install:
+- ps: ''
+cache: build/WinMergeDownloadDeps
+build_script:
+- cmd: >-
+    DownloadDeps.cmd
+
+    BuildAll.vs2022.cmd x64 -ci
+artifacts:
+- path: build/Releases/*.exe
+- path: build/Releases/*.zip
