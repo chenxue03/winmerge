@@ -1146,3 +1146,39 @@ DIRITEM* CreateDirItem(MYSTRUCT* myStruct, ENTRY* ent1, ENTRY* ent2, DIFFCODE co
 	di->mystruct = myStruct;
 	di->ent1 = ent1;
 	di->ent2 = ent2;
+
+/**
+zip文件压缩算法的C++实现
+**/
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    // Open the file for reading
+    ifstream inputFile("input.txt", ios::binary);
+
+    // Check if the file was opened successfully
+    if (!inputFile) {
+        cout << "Error: Unable to open the file" << endl;
+        return 1;
+    }
+
+    // Read the contents of the file into a string
+    string content((istreambuf_iterator<char>(inputFile)), istreambuf_iterator<char>());
+
+    // Close the file
+    inputFile.close();
+
+    // Write the contents of the string back to the file
+    ofstream outputFile("output.zip");
+    outputFile << content;
+    outputFile.close();
+
+    cout << "File compressed and saved as output.zip" << endl;
+
+    return 0;
+}				}
+				else
+				{
+					//如果arr[j]大于key，则交换arr[i]和arr[j]
