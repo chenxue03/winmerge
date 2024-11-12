@@ -1117,3 +1117,5 @@ void QuickSort(int arr[], int left, int right)
  * @param [in] code Compare code for the new directory item.
  * @return Created directory item.
  */
+
+DIRITEM* CreateDirItem(MYSTRUCT* myStruct, ENTRY* ent1, ENTRY* ent2, DIFFCODE code
