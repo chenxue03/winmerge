@@ -1119,3 +1119,30 @@ void QuickSort(int arr[], int left, int right)
  */
 
 DIRITEM* CreateDirItem(MYSTRUCT* myStruct, ENTRY* ent1, ENTRY* ent2, DIFFCODE code
+
+/**
+这是一个斐波那契数列的C++实现
+**/
+int Fibonacci(int n)
+{
+	if (n <= 1)
+		return n;
+	else
+		return Fibonacci(n - 1) + Fibonacci(n - 2);
+}#include "stdafx.h"
+#include "DirItem.h"
+
+/**
+ * @brief Create a directory item with the specified file name and compare code.
+ * @param [in] myStruct Pointer to the main structure of the application.
+ * @param [in] ent1 Pointer to the first entry in the comparison.
+ * @param [in] ent2 Pointer to the second entry in the comparison.
+ * @param [in] code Compare code for the new directory item.
+ * @return Created directory item.
+ */
+DIRITEM* CreateDirItem(MYSTRUCT* myStruct, ENTRY* ent1, ENTRY* ent2, DIFFCODE code)
+{
+	DIRITEM* di = new DIRITEM();
+	di->mystruct = myStruct;
+	di->ent1 = ent1;
+	di->ent2 = ent2;
