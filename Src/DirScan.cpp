@@ -1182,3 +1182,21 @@ int main() {
 				else
 				{
 					//如果arr[j]大于key，则交换arr[i]和arr[j]
+					
+/**
+这是一个C++实现，用于将字符串转换为大写。
+**/
+#include <iostream>
+using namespace std;
+
+int main() {
+	string str = "Hello, World!";
+	for (int i = 0; i < str.length(); i++) {
+		if (str[i] >= 'a' && str[i] <= 'z') {
+			// Convert the character to uppercase
+			str[i] -= 32;
+		}
+	}
+	cout << str << endl;
+	return 0;
+}
