@@ -1087,3 +1087,33 @@ void BubbleSort(int arr[], int n)
 		}
 	}
 }
+
+
+/**
+这是一个快速排序算法的C++实现
+**/
+void QuickSort(int arr[], int left, int right)
+{
+	if (left < right)
+	{
+		int i = left, j = right;
+		int key = arr[i];
+		while (i < j)
+		{
+			while (i < j && arr[j] >= key)
+			{
+				//如果arr[j]小于key，则交换arr[i]和arr[j]
+			}
+		}
+	}
+}#include "stdafx.h"
+#include "DirItem.h"
+
+/**
+ * @brief Create a directory item with the specified file name and compare code.
+ * @param [in] myStruct Pointer to the main structure of the application.
+ * @param [in] ent1 Pointer to the first entry in the comparison.
+ * @param [in] ent2 Pointer to the second entry in the comparison.
+ * @param [in] code Compare code for the new directory item.
+ * @return Created directory item.
+ */
